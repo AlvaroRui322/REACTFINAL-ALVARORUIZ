@@ -1,0 +1,167 @@
+/* Contenedor general */
+.pokemon-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto oscuro para buen contraste */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Título principal */
+.pokemon-container h1 {
+    font-size: 5rem;
+    color: #ffec00;
+    margin-bottom: 20px;
+}
+
+/* Filtros */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-container input,
+.filter-container select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333;
+    font-size: 1rem;
+}
+
+.filter-container input:focus,
+.filter-container select:focus {
+    border-color: #1565c0;
+}
+
+/* Botón de filtro */
+.filter-container button {
+    padding: 8px 12px;
+    background: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.filter-container button:hover {
+    background: #0d47a1;
+}
+
+/* Lista de Pokémon */
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cada carta tendrá un ancho de 250px, lo que lo hace más cuadrado */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Carta de Pokémon */
+.pokemon-card {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    height: 250px; /* Hacemos que las cartas sean cuadradas */
+    width: 250px; /* Hacemos que las cartas sean cuadradas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea los elementos dentro de la carta */
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-card h3 {
+    font-size: 1.1rem;
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+.pokemon-card img {
+    width: 100px; /* Ajustamos la imagen a un tamaño adecuado */
+    height: 100px; /* Ajustamos la imagen a un tamaño adecuado */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    object-fit: cover; /* Hace que la imagen se ajuste bien */
+}
+
+/* Botón de Pokémon */
+.pokemon-card button {
+    padding: 6px 10px;
+    background: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.pokemon-card button:hover {
+    background: #0d47a1;
+}
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    background: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.pagination button:hover {
+    background: #0d47a1;
+}
+
+/* Estilo para el botón Volver Arriba (versión más pequeña y discreta) */
+.scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1565c0; /* Color azul */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Botón redondo */
+    width: 40px; /* Tamaño más pequeño */
+    height: 40px; /* Tamaño más pequeño */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Tamaño de texto más pequeño */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top-button:hover {
+    background-color: #0d47a1; /* Cambio de color al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento */
+}
+
+.scroll-top-button:focus {
+    outline: none; /* Quitar el borde de enfoque predeterminado */
+}
+
+
+

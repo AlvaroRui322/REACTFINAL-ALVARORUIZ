@@ -1,0 +1,120 @@
+/* General Reset and Body Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50; /* Dark navy */
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Logo */
+.navbar-logo {
+    color: #ecf0f1; /* Light Gray */
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+    color: #f39c12; /* Bright orange */
+}
+
+/* Navbar Links Container */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Buttons */
+.navbar-button {
+    background-color: #3498db; /* Bright Blue */
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navbar-button:hover {
+    background-color: #2980b9; /* Darker Blue */
+    transform: scale(1.05);
+}
+
+/* Profile Link */
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-profile:hover {
+    color: #f39c12; /* Bright orange */
+}
+
+/* Avatar */
+.navbar-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-logo {
+        font-size: 22px;
+    }
+
+    .navbar-button {
+        width: 100%;
+        text-align: left;
+        padding: 10px 15px;
+    }
+
+    .navbar-avatar {
+        width: 30px;
+        height: 30px;
+    }
+}
+

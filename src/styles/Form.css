@@ -1,0 +1,180 @@
+/* Estilos generales para todo el formulario */
+.contact-form-container, .auth-form-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #fff; /* Fondo blanco para integrarse bien con el fondo de la página */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #e1e1e1; /* Borde suave para un look más profesional */
+}
+
+/* Fondo general de la página */
+body {
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto oscuro para facilitar la lectura */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+    color: #FFDD00;  /* Amarillo brillante, como el color principal de Pokémon */
+    font-weight: 1000;
+    font-family: 'Pokemon Solid', sans-serif;  /* Tipografía temática */
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0 #0061ff, -4px -4px 0 #0061ff, 2px -2px 0 #0061ff, -2px 2px 0 #0061ff;
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+label {
+    font-size: 1rem;
+    color: #333; /* Color oscuro y suave para el texto */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Estilo para los campos de entrada (input, textarea) */
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border: 1px solid #ccc; /* Borde gris claro para los campos */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    box-sizing: border-box;
+}
+
+/* Cambio de color en los campos de entrada al enfocarlos */
+input:focus, textarea:focus {
+    border-color: #ff4d4d; /* Un rojo suave para resaltar el campo en foco */
+    outline: none;
+}
+
+/* Estilo para el mensaje de error */
+.error {
+    color: #ff4d4d; /* Rojo más suave para los mensajes de error */
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Estilo para los botones */
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #009bff; /* Rojo suave para los botones */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #e03e3e; /* Rojo más oscuro al pasar el ratón */
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #ff4d4d; /* Rojo para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los botones sociales (por ejemplo, Google) */
+.social-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4285F4; /* Color azul de Google */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #357AE8; /* Color azul de Google cuando el usuario pasa el ratón */
+}
+
+/* Estilo para mobile */
+@media (max-width: 480px) {
+    .contact-form-container, .auth-form-container {
+        width: 90%;
+        padding: 1rem;
+    }
+}
+
+.auth-form-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Campos de entrada y textarea */
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Estilo de error */
+.error {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Checkbox y etiqueta */
+.terms-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #009bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e03e3e;
+}

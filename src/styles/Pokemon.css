@@ -1,0 +1,105 @@
+/* Contenedor principal de la Pokédex */
+.pokedex-container {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto oscuro para buen contraste */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto 1fr; /* Define 2 filas: una para el botón y otra para el contenido */
+    grid-template-columns: 1fr; /* Una columna */
+    gap: 20px;
+    position: relative;
+}
+
+/* Botón de volver */
+.pokedex-back {
+    padding: 8px 16px;
+    background: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    justify-self: start; /* Alinea el botón al inicio (izquierda) */
+    align-self: start; /* Lo alinea en la parte superior */
+}
+
+.pokedex-back:hover {
+    background: #0d47a1;
+}
+
+/* Pantalla central de la Pokédex */
+.pokedex-screen {
+    background: #002433; /* Azul oscuro */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Tres filas: título, imagen y detalles */
+    gap: 20px;
+}
+
+/* Título del Pokémon */
+.pokedex-screen h1 {
+    font-size: 2rem;
+    color: #ffec00; /* Azul */
+    margin-bottom: 0;
+}
+
+/* Imagen del Pokémon */
+.pokemon-gif {
+    width: 150px;
+    height: 150px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalles del Pokémon */
+.pokedex-screen p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Resaltado de información */
+.pokedex-screen p strong {
+    color: #00e676; /* Verde claro */
+}
+
+/* Botón para añadir al equipo */
+.pokedex-screen button {
+    background: #1565c0;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pokedex-screen button:hover {
+    background: #0d47a1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
